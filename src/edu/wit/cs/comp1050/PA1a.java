@@ -1,9 +1,18 @@
 package edu.wit.cs.comp1050;
 
-// Edgar Romero
+/**
+ * Solution to the first part
+ * 
+ * @author Edgar Romero
+ *
+ */
 public class PA1a {
 
-	// This will print out Hello, World in the terminal
+	/**
+	 * Starts the program, outputs "Hello World!"
+	 * 
+	 * @param args command-line arguments ignored
+	 */
 	public static void main(String[] args) {
 		System.out.println("Hello World!");
 	}
