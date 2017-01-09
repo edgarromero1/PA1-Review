@@ -1,11 +1,11 @@
 package edu.wit.cs.comp1050;
 
-// TODO: document this class
+// Edgar Romero
 public class PA1a {
 
-	// TODO: document this method
+	// This will print out Hello, World in the terminal
 	public static void main(String[] args) {
-		// TODO: write your code here
+		System.out.println("Hello, World!");
 	}
 
 }
