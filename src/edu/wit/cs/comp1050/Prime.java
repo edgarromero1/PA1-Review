@@ -11,11 +11,13 @@ public class Prime {
 	 * @return true if n is prime, false otherwise
 	 */
 	public static boolean isPrime(int n) {
-	
-		if(n%2==0 && n <2){
-			return true;
+		if(n<=0){
+			return false;
 		}
-		return false; 
+		if(n%2 ==0){
+			
+		}
+		return true; 
 	}
 	
 	/**
