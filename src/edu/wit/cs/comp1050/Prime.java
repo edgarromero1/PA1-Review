@@ -11,7 +11,11 @@ public class Prime {
 	 * @return true if n is prime, false otherwise
 	 */
 	public static boolean isPrime(int n) {
-		return false; // replace with your code
+	
+		if(n%2==0 && n <2){
+			return true;
+		}
+		return false; 
 	}
 	
 	/**
@@ -22,7 +26,10 @@ public class Prime {
 	 * @return first prime that occurs after n
 	 */
 	public static int primeAfter(int n) {
-		return 0; // replace with your code (hint: isPrime is quite useful here)
+		if(isPrime(n)){
+			return n+1;
+		}
+		return n; // replace with your code (hint: isPrime is quite useful here)
 	}
 	
 	/**

@@ -20,9 +20,20 @@ public class E1a {
 	 * @return largest value in nums, null if nums is empty
 	 */
 	public static Integer biggestNum(int[] nums) {
-		return null; // replace with your code
+		
+		if(nums.length != 0){
+			int biggest = nums[0];
+			for(int i = 0; i < nums.length; i++){
+				if(nums[i] > biggest){
+					biggest = nums[i];
+				}
+			}
+			return biggest;
+		}else {
+			return null;
+		}
+		
 	}
-	
 	/**
 	 * Returns a string with
 	 * the largest value in a
@@ -33,7 +44,14 @@ public class E1a {
 	 * @return largest value in nums, ERR_EMPTY if nums is empty
 	 */
 	public static String biggest(int[] nums) {
-		return ""; // replace with your code (hint: use biggestNum above)
+		
+		if (nums.length != 0){
+			String biggest;
+			biggest = biggestNum(nums).toString();
+			return biggest;
+		} else
+		
+		return ERR_EMPTY; // replace with your code (hint: use biggestNum above)
 	}
 	
 	/**
@@ -44,7 +62,20 @@ public class E1a {
 	 * @return array of integers, null if there was a non-integer in args
 	 */
 	public static int[] convertToNums(String[] args) {
-		return null; // replace with your code
+		int[] numbers = new int [args.length];
+		
+		if (args.length == 2){
+			try{
+			for(int i = 0; i < args.length; i ++){
+				 numbers[i] = Integer.parseInt(args[i]);	 
+			}
+			return numbers;
+			}catch (Exception e){
+				return null;
+			}
+
+		} else
+		return null; 
 	}
 
 	/**
@@ -55,7 +86,7 @@ public class E1a {
 	 * @param args command-line arguments: num1 num2 ...
 	 */
 	public static void main(String[] args) {
-		// replace with your code
+		
 	}
 
 }
